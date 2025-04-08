@@ -1,39 +1,42 @@
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] MongoDB starting : pid=15059 port=27017 dbpath=/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/backend/data/db 64-bit host=codespaces-7d7aa9
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] db version v3.6.8
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] allocator: tcmalloc
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] modules: none
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] build environment:
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten]     distarch: x86_64
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten]     target_arch: x86_64
-2025-04-07T23:16:35.301+0000 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "octofit-tracker/backend/data/db" }, systemLog: { destination: "file", path: "octofit-tracker/backend/data/mongodb.log" } }
-2025-04-07T23:16:35.301+0000 I STORAGE  [initandlisten] 
-2025-04-07T23:16:35.301+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
-2025-04-07T23:16:35.301+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
-2025-04-07T23:16:35.301+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7483M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
-2025-04-07T23:16:35.508+0000 I STORAGE  [initandlisten] WiredTiger message [1744067795:508171][15059:0x7a2c4d5e2ac0], txn-recover: Set global recovery timestamp: 0
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] 
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] 
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] 
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] 
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
-2025-04-07T23:16:35.522+0000 I CONTROL  [initandlisten] 
-2025-04-07T23:16:35.523+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 926664db-64dc-4ff7-abb1-10045af583f4
-2025-04-07T23:16:35.529+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
-2025-04-07T23:16:35.532+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: c387b756-b153-458a-b8ae-343c9cffc745
-2025-04-07T23:16:35.539+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/backend/data/db/diagnostic.data'
-2025-04-07T23:16:35.539+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: c7576d57-cd2d-42c9-ac8f-7ab566eea969
-2025-04-07T23:16:35.540+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
-2025-04-07T23:16:35.551+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
-2025-04-07T23:16:35.551+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
-2025-04-07T23:16:35.552+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] MongoDB starting : pid=53740 port=27017 dbpath=/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/backend/data/db 64-bit host=codespaces-7d7aa9
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] db version v3.6.8
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] modules: none
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] build environment:
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-04-08T00:17:06.456+0000 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "octofit-tracker/backend/data/db" }, systemLog: { destination: "file", path: "octofit-tracker/backend/data/mongodb.log" } }
+2025-04-08T00:17:06.456+0000 I STORAGE  [initandlisten] 
+2025-04-08T00:17:06.456+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2025-04-08T00:17:06.456+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2025-04-08T00:17:06.456+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7483M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2025-04-08T00:17:06.745+0000 I STORAGE  [initandlisten] WiredTiger message [1744071426:745787][53740:0x7c6c3d5c5ac0], txn-recover: Set global recovery timestamp: 0
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] 
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] 
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2025-04-08T00:17:06.759+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2025-04-08T00:17:06.760+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2025-04-08T00:17:06.760+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2025-04-08T00:17:06.760+0000 I CONTROL  [initandlisten] 
+2025-04-08T00:17:06.760+0000 I CONTROL  [initandlisten] 
+2025-04-08T00:17:06.760+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-04-08T00:17:06.760+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-04-08T00:17:06.760+0000 I CONTROL  [initandlisten] 
+2025-04-08T00:17:06.760+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 33dfdc18-5a0f-43a3-b432-4a669c0b2694
+2025-04-08T00:17:06.767+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2025-04-08T00:17:06.771+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: efd38fe9-db0a-4fe8-af1a-6aee1f5e7823
+2025-04-08T00:17:06.778+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/backend/data/db/diagnostic.data'
+2025-04-08T00:17:06.778+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2025-04-08T00:17:06.778+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: b3a98c9c-0207-4f16-9a2f-25858cb9cbb3
+2025-04-08T00:17:06.795+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2025-04-08T00:17:06.795+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T00:17:06.797+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2025-04-08T00:17:16.011+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43178 #1 (1 connection now open)
+2025-04-08T00:17:16.012+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:43178 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-08T00:17:16.014+0000 I NETWORK  [conn1] end connection 127.0.0.1:43178 (0 connections now open)

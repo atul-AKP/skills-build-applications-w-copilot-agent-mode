@@ -1,4 +1,4 @@
-# Getting started - app frontend and backend creation
+# Getting started - app frontend and backend creation 
 
 ## Explain to GitHub Copilot the goals and steps
 
